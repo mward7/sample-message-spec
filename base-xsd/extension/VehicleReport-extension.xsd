@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/VehicleReport-extension" 
+    xmlns:vr="http://www.example.org/VehicleReport-extension"
+    xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/"
+    ct:conformanceTargets="http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument"
+    xmlns:ct="http://release.niem.gov/niem/conformanceTargets/3.0/"
+    elementFormDefault="qualified">
+
+  <xs:annotation>
+    <xs:documentation>This message specification shows the relationship between a vehicle and owner.
+    </xs:documentation>
+  </xs:annotation>
+	
+  <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
+      schemaLocation="../niem/niem-core/4.0/niem-core.xsd" />
+
+  <xs:element name="VehicleReport" type="nc:TODO">
+    <xs:annotation>
+      <xs:documentation> Shows who a vehicle currently belongs to.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>
