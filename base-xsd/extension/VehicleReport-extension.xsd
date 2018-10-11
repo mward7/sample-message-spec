@@ -16,7 +16,7 @@
   <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
       schemaLocation="../niem/niem-core/4.0/niem-core.xsd" />
 
-  <xs:element name="VehicleReport" type="nc:TODO">
+  <xs:element name="VehicleReport" type="nc:PersonType"> <!-- TODO -->
     <xs:annotation>
       <xs:documentation> Shows who a vehicle currently belongs to.
       </xs:documentation>

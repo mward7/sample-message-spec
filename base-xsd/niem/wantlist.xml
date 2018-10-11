@@ -12,8 +12,8 @@
     <w:ElementInType w:name="nc:PersonName" w:isReference="false"
       w:minOccurs="0" w:maxOccurs="unbounded"/>
   </w:Type>
-  <!-- TODO <w:Type w:name="nc:IdentificationType" w:isRequested="false">
+  <w:Type w:name="nc:IdentificationType" w:isRequested="false"> <!-- TODO -->
     <w:ElementInType w:name="nc:VehicleIdentification" w:isReference="false"
       w:minOccurs="0" w:maxOccurs="unbounded"/>
-  </w:Type> -->
+  </w:Type>
 </w:WantList>

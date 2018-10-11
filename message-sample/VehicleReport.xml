@@ -6,7 +6,7 @@
     <nc:PersonGivenName>Bob</nc:PersonGivenName>
     <nc:PersonSurName>Wilson</nc:PersonSurName>
   </nc:PersonName>
-  <nc:VehicleIdentification>
+  <nc:VehicleIdentification> <!-- TODO -->
     5NMSH73E79H264217
   </nc:VehicleIdentification>
 </vr:VehicleReport>

@@ -74,9 +74,9 @@
       <xs:documentation>A last name or family name of a person.</xs:documentation>
     </xs:annotation>
   </xs:element>
-  <-- TODO <xs:element name="VehicleIdentification" type="nc:IdentificationType" nillable="true">
+  <xs:element name="VehicleIdentification" type="nc:IdentificationType" nillable="true"> <!-- TODO -->
     <xs:annotation>
       <xs:documentation>A unique identification for a specific vehicle.</xs:documentation>
     </xs:annotation>
-  </xs:element> -->
+  </xs:element>
 </xs:schema>
