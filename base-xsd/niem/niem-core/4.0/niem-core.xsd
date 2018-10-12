@@ -4,13 +4,14 @@
     <xs:documentation>NIEM Core.</xs:documentation>
   </xs:annotation>
   <xs:import schemaLocation="../../proxy/xsd/4.0/xs.xsd" namespace="http://release.niem.gov/niem/proxy/xsd/4.0/"/>
-  <xs:import schemaLocation="../../utility/structures/4.0/structures.xsd" namespace="http://release.niem.gov/niem/structures/4.0/"/>  <xs:complexType name="AssociationType">
-  <xs:annotation>
-    <xs:documentation>A data type for an association, connection, relationship, or involvement somehow linking people, things, and/or activities together.</xs:documentation>
-  </xs:annotation>
-  <xs:complexContent>
-    <xs:extension base="structures:AssociationType"/>
-  </xs:complexContent>
+  <xs:import schemaLocation="../../utility/structures/4.0/structures.xsd" namespace="http://release.niem.gov/niem/structures/4.0/"/>
+  <xs:complexType name="AssociationType">
+    <xs:annotation>
+      <xs:documentation>A data type for an association, connection, relationship, or involvement somehow linking people, things, and/or activities together.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="structures:AssociationType"/>
+    </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="IdentificationType">
     <xs:annotation>

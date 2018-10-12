@@ -5,7 +5,7 @@
   <w:Element w:name="nc:VehicleIdentification" w:isReference="false" w:nillable="false"/>
   <w:Type w:name="nc:IdentificationType" w:isRequested="false">
     <w:ElementInType w:name="nc:IdentificationID" w:isReference="false"
-                     w:minOccurs="0" w:maxOccurs="unbounded"/>
+      w:minOccurs="0" w:maxOccurs="unbounded"/>
   </w:Type>
   <w:Type w:name="nc:PersonNameType" w:isRequested="false">
     <w:ElementInType w:name="nc:PersonGivenName" w:isReference="false"
