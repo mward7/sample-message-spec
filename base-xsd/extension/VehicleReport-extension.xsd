@@ -9,16 +9,31 @@
     elementFormDefault="qualified">
 
   <xs:annotation>
-    <xs:documentation>This message specification shows the relationship between a vehicle and owner.
+    <xs:documentation>This message specification shows the relationship between a Vehicle and Person who owns it.
     </xs:documentation>
   </xs:annotation>
 	
   <xs:import namespace="http://release.niem.gov/niem/niem-core/4.0/"
       schemaLocation="../niem/niem-core/4.0/niem-core.xsd" />
 
-  <xs:element name="VehicleReport" type="nc:PersonType"> <!-- TODO -->
+  <xs:complexType name="VehicleReportType">
     <xs:annotation>
-      <xs:documentation> Shows who a vehicle currently belongs to.
+      <xs:documentation>A report that shows who a Vehicle currently belongs to.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="nc:AssociationType">
+        <xs:sequence>
+          <xs:element ref="nc:Person" minOccurs="1" maxOccurs="1" />
+          <xs:element ref="nc:VehicleIdentification" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:element name="VehicleReport" type="vr:VehicleReportType">
+    <xs:annotation>
+      <xs:documentation>A relationship between a Person and their currently owned Vehicle.
       </xs:documentation>
     </xs:annotation>
   </xs:element>
